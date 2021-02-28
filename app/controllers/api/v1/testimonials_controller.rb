@@ -1,2 +1,2 @@
-class TestimonialsController < ApplicationController
+class Api::V1::TestimonialsController < ApplicationController
 end

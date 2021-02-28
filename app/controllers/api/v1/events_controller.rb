@@ -1,4 +1,4 @@
-class EventsController < ApplicationController
+class Api::V1::EventsController < ApplicationController
 ##show all events 
     def index 
         @events = Event.all
@@ -18,6 +18,7 @@ class EventsController < ApplicationController
             render json: :@event
         else 
             render json: :@event.errors.full_messages
+        end 
     end 
 
 ## update an existing event 
